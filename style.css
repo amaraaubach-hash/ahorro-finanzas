@@ -1,0 +1,497 @@
+/* --- ESTILOS GENERALES Y COLORES --- */
+:root {
+    --primary-color: #2c3e50; /* Azul oscuro profesional */
+    --accent-color: #2980b9; /* Azul más brillante para enlaces */
+    --bg-color: #f4f7f6; /* Gris muy claro de fondo */
+    --text-color: #333; /* Negro suave para texto */
+    --white: #ffffff;
+}
+
+/* --- AJUSTES PARA LA CALCULADORA --- */
+input[type="number"] {
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+    input[type="number"]:focus {
+        border-color: var(--accent-color);
+        outline: none;
+    }
+
+#resultadoAhorro {
+    transition: all 0.3s ease;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #eef7ff; /* Un azul muy clarito para el resultado */
+    margin-top: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- CABECERA (HEADER) --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 30px 0;
+    text-align: center;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+        header h1 .highlight {
+            color: #3498db; /* Un toque celeste para la marca */
+        }
+
+    header p {
+        margin: 10px 0 0;
+        opacity: 0.8;
+    }
+
+/* --- MENÚ DE NAVEGACIÓN --- */
+nav {
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+            nav ul li a:hover {
+                color: var(--accent-color);
+            }
+
+/* --- DISEÑO DE DOS COLUMNAS (MAIN-CONTENT) --- */
+.main-content {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Columna izquierda (Artículos) */
+main {
+    flex: 3;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+    main article {
+        margin-bottom: 30px;
+    }
+
+    main h2 {
+        color: var(--primary-color);
+        margin-top: 0;
+    }
+
+    main p {
+        margin-bottom: 20px;
+    }
+
+.read-more {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 30px 0;
+}
+
+/* Barra lateral derecha (Aside) */
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-box {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+    .sidebar-box h3, .sidebar-box h4 {
+        margin-top: 0;
+        color: var(--primary-color);
+    }
+
+/* Botón de herramienta */
+.btn-tool {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+    .btn-tool:hover {
+        background-color: var(--primary-color);
+    }
+
+/* --- ESTILOS ESPECÍFICOS PARA EL ANUNCIO (ADSENSE) --- */
+.ad-box {
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo ligeramente diferente para destacar */
+}
+
+    .ad-box h4 {
+        font-size: 0.8rem;
+        color: #999;
+        margin-bottom: 10px;
+    }
+
+.adsense-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px; /* Tamaño de un anuncio banner estándar */
+    background-color: #eee;
+    border: 2px dashed #ccc;
+    color: #666;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+    footer p {
+        margin: 5px 0;
+    }
+
+.disclaimer {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 15px !important;
+}
+/* Estilo para las imágenes de los artículos */
+.article-image {
+    width: 100%; /* Ocupa todo el ancho del artículo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados como el resto de la web */
+    margin-bottom: 20px; /* Separación con el texto de abajo */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
+}
+/* Efecto para el botón del menú cuando pasas el ratón */
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: white !important;
+    border-radius: 5px;
+}
+
+/* Estilo para las tarjetas informativas */
+section div {
+    background: white;
+    transition: transform 0.3s ease;
+}
+
+    section div:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+/* --- AJUSTES PARA MÓVIL --- */
+@media (max-width: 768px) {
+    /* Pone la barra lateral DEBAJO del artículo */
+    .main-content {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    /* Hace que ocupen todo el ancho del móvil */
+    main, aside {
+        width: 100% !important;
+        flex: none;
+        margin: 0;
+    }
+
+    /* Menú en lista vertical para que no se corte */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+        nav ul li {
+            margin: 5px 0;
+            width: 90%;
+            text-align: center;
+        }
+
+            nav ul li a {
+                display: block;
+                padding: 12px;
+                background: #f8f9fa;
+                border: 1px solid #eee;
+                border-radius: 5px;
+            }
+
+    /* Evita que el título sea demasiado grande en pantallas pequeñas */
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+/* --- BOTÓN DE CALCULAR MODERNO Y LLAMATIVO --- */
+.btn-calculadora {
+    display: block;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Pero no se hace gigante en PC */
+    margin: 20px auto; /* Centrado con espacio arriba y abajo */
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%); /* Degradado azul profesional */
+    color: white !important;
+    border: none;
+    padding: 18px 30px; /* Mucho más alto para que sea fácil de pulsar con el dedo */
+    font-size: 20px; /* Texto grande */
+    font-weight: bold;
+    text-transform: uppercase; /* Letras mayúsculas para dar fuerza */
+    letter-spacing: 1px;
+    border-radius: 50px; /* Forma de píldora moderna */
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(41, 128, 185, 0.3); /* Sombra elegante */
+    transition: all 0.3s ease; /* Animación suave */
+}
+
+    .btn-calculadora:hover {
+        transform: translateY(-3px); /* Se eleva un poquito al pasar el ratón */
+        box-shadow: 0 15px 25px rgba(41, 128, 185, 0.4);
+        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); /* Cambia el degradado */
+    }
+
+    .btn-calculadora:active {
+        transform: translateY(-1px); /* Efecto de pulsado */
+    }
+
+/* Ajuste para que el input de número también se vea mejor */
+.calculadora-destacada input[type="number"] {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.calculadora-destacada input:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+/* --- ESTILOS PARA EL MENSAJE DE FELICITACIÓN --- */
+.resultado-oculto {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.resultado-visible {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #e8f8f5; /* Un verde muy clarito de éxito */
+    border: 1px solid #c3e6cb;
+}
+
+.mensaje-felicitacion {
+    text-align: center;
+}
+
+.icono-celebracion {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mensaje-felicitacion h3 {
+    color: #1abc9c; /* Verde éxito */
+    margin-top: 0;
+}
+
+.cantidad-ahorrada {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2980b9; /* Azul principal */
+    margin: 15px 0;
+}
+.mensaje-felicitacion p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+/* --- BOTONES DE COMPARTIR --- */
+.compartir-container {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+}
+
+.btn-share {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white !important;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+    .btn-share:hover {
+        transform: scale(1.05);
+    }
+
+.whatsapp {
+    background-color: #25D366; /* Verde WhatsApp */
+}
+
+.twitter {
+    background-color: #000000; /* Negro X / Twitter */
+}
+/* --- COLORES PARA NUEVAS REDES --- */
+.botones-sociales {
+    display: flex;
+    flex-wrap: wrap; /* Para que si no caben, bajen a la siguiente fila */
+    justify-content: center;
+    gap: 10px;
+}
+
+.facebook {
+    background-color: #1877F2;
+}
+
+.discord {
+    background-color: #5865F2;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* Ajuste para que todos los botones tengan el mismo tamaño visual */
+.btn-share {
+    min-width: 100px;
+    text-align: center;
+}
+/* --- ESTILOS PARA LA PÁGINA DE RECURSOS --- */
+.recursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.recurso-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+    .recurso-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .recurso-card.destacada {
+        border: 2px solid var(--accent-color);
+        background-color: #f0f7ff;
+    }
+
+.recurso-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.recurso-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.recurso-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recurso-card li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+/* --- ESTILOS DICCIONARIO --- */
+.diccionario-container {
+    margin-top: 25px;
+}
+
+.termino-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #3498db; /* Una línea azul lateral para que resalte */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+    .termino-card:hover {
+        transform: translateX(10px); /* Un pequeño efecto al pasar el ratón */
+    }
+
+    .termino-card h3 {
+        margin-top: 0;
+        color: #2c3e50;
+        font-size: 1.3rem;
+    }
+
+    .termino-card p {
+        margin-bottom: 0;
+        color: #555;
+        line-height: 1.6;
+    }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ahorro | Ahorro Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Ahorro<span class="highlight">Finanzas</span></h1>
+            <p>Aprende a gestionar tu dinero sin ser experto.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ahorro.html">Ahorro</a></li>
+                <li><a href="inversion.html">Inversión</a></li>
+                <li><a href="calculadoras.html">Calculadoras</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="retos.html">Retos</a></li>
+                <li><a href="diccionario.html">Diccionario</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <main>
+            <article>
+                <h2>Herramientas para proyectar tu futuro</h2>
+                <img src="calculadora-empoderamiento-financiero.png" alt="Ilustración de la Calculadora de Ahorro Inteligente" class="article-image">
+                <p>Calcular cuánto puedes ahorrar es el primer paso para establecer metas financieras reales y alcanzables.</p>
+
+                <div class="calculadora-destacada">
+                    <h3>Calcula tu Ahorro Anual</h3>
+
+                    <div class="input-group">
+                        <label for="ahorroMensual">Ahorro mensual (€/$):</label>
+                        <input type="number" id="ahorroMensual" placeholder="Ej: 100">
+                    </div>
+
+                    <button onclick="calcular()" class="btn-calculadora">¡Calcular!</button>
+
+                    <div id="resultadoAhorro" class="resultado-oculto">
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <aside>
+            <div class="sidebar-box tools-box">
+                <h3>¿Sabías que...?</h3>
+                <p>Ahorrar solo 50€ al mes se convierten en 600€ al año. ¡Empieza hoy!</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ahorro Finanzas Pro.</p>
+            <p style="font-size: 0.8rem;">
+                <a href="index.html" style="color: white; margin: 0 5px;">Inicio</a> |
+                <a href="contacto.html" style="color: white; margin: 0 5px;">Contacto</a> |
+                <a href="aviso-legal.html" style="color: white; margin: 0 5px;">Aviso Legal</a> |
+                <a href="privacidad.html" style="color: white; margin: 0 5px;">Privacidad</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        function calcular() {
+        const ahorroMensual = parseFloat(document.getElementById('ahorroMensual').value);
+        const resultadoDiv = document.getElementById('resultadoAhorro');
+
+        if (isNaN(ahorroMensual) || ahorroMensual <= 0) {
+        resultadoDiv.innerHTML = "❌ Por favor, introduce una cantidad válida.";
+        resultadoDiv.style.color = "red";
+        resultadoDiv.className = 'resultado-visible';
+        return;
+        }
+
+        const ahorroAnual = ahorroMensual * 12;
+        const frasesMotivadoras = [
+        "¡Cada céntimo cuenta para tu libertad financiera!",
+        "Ahorrar es cuidar de tu 'yo' del futuro.",
+        "No es cuánto ganas, sino cuánto conservas.",
+        "La constancia es la clave del éxito financiero.",
+        "¡Vas por muy buen camino, no te detengas!"
+        ];
+
+        const fraseAzar = frasesMotivadoras[Math.floor(Math.random() * frasesMotivadoras.length)];
+
+        // Generamos el contenido del resultado con el botón de compartir
+        resultadoDiv.innerHTML = `
+        <div class="mensaje-felicitacion" style="background: #f0f9ff; padding: 20px; border-radius: 10px; border: 1px solid #bae6fd; margin-top: 20px;">
+        <span style="font-size: 2.5rem;">🎉</span>
+        <h3 style="color: #0369a1; margin: 10px 0;">¡Increíble progreso!</h3>
+        <p style="font-style: italic; color: #555; margin-bottom: 15px;">"${fraseAzar}"</p>
+        <p>En un año habrás acumulado:</p>
+        <p class="cantidad-ahorrada" id="montoFinal" style="font-size: 2rem; font-weight: bold; color: #2ecc71; margin: 10px 0;">${ahorroAnual.toFixed(2)}€</p>
+
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 20px 0;">
+
+        <p style="margin-bottom:10px; font-weight:bold; color: #2c3e50;">¡Comparte tu meta con amigos!</p>
+        <button onclick="compartirMeta()" style="background:#25D366; color:white; border:none; padding:12px 20px; border-radius:50px; cursor:pointer; font-weight:bold; display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0 auto; transition: transform 0.2s;">
+        📱 Enviar a WhatsApp / Contactos
+        </button>
+        </div>
+        `;
+
+        resultadoDiv.className = 'resultado-visible';
+        resultadoDiv.style.color = "#2c3e50";
+
+        // Lanzar confeti
+        confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+        });
+        }
+
+        // Función para abrir la lista de contactos o WhatsApp
+        function compartirMeta() {
+        const monto = document.getElementById('montoFinal').innerText;
+        const mensaje = `¡Mira mi meta de ahorro! 💰 He calculado que en un año habré acumulado ${monto} con esta herramienta. ¡Pruébala tú también!`;
+        const urlActual = window.location.href;
+
+        if (navigator.share) {
+        // Abre el menú nativo del móvil (WhatsApp, Telegram, etc.)
+        navigator.share({
+        title: 'Mi Meta en Ahorro Inteligente',
+        text: mensaje,
+        url: urlActual
+        }).catch(console.error);
+        } else {
+        // Si estás en PC, abre WhatsApp Web directamente
+        const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(mensaje + " " + urlActual)}`;
+        window.open(whatsappUrl, '_blank');
+        }
+        }
+    </script>
+</body>
+</html>
