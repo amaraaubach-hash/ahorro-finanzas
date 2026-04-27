@@ -1,7 +1,7 @@
 /* --- ESTILOS GENERALES Y COLORES --- */
 :root {
     --primary-color: #2c3e50; /* Azul oscuro profesional */
-    --accent-color: #2980b9; /* Azul m·s brillante para enlaces */
+    --accent-color: #2980b9; /* Azul m√°s brillante para enlaces */
     --bg-color: #f4f7f6; /* Gris muy claro de fondo */
     --text-color: #333; /* Negro suave para texto */
     --white: #ffffff;
@@ -63,7 +63,7 @@ header {
         opacity: 0.8;
     }
 
-/* --- MEN⁄ DE NAVEGACI”N --- */
+/* --- MEN√ö DE NAVEGACI√ìN --- */
 nav {
     background-color: var(--white);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -90,7 +90,7 @@ nav {
                 color: var(--accent-color);
             }
 
-/* --- DISE—O DE DOS COLUMNAS (MAIN-CONTENT) --- */
+/* --- DISE√ëO DE DOS COLUMNAS (MAIN-CONTENT) --- */
 .main-content {
     display: flex;
     gap: 40px;
@@ -98,7 +98,7 @@ nav {
     margin-bottom: 40px;
 }
 
-/* Columna izquierda (ArtÌculos) */
+/* Columna izquierda (Art√≠culos) */
 main {
     flex: 3;
     background-color: var(--white);
@@ -152,7 +152,7 @@ aside {
         color: var(--primary-color);
     }
 
-/* BotÛn de herramienta */
+/* Bot√≥n de herramienta */
 .btn-tool {
     background-color: var(--accent-color);
     color: var(--white);
@@ -168,7 +168,7 @@ aside {
         background-color: var(--primary-color);
     }
 
-/* --- ESTILOS ESPECÕFICOS PARA EL ANUNCIO (ADSENSE) --- */
+/* --- ESTILOS ESPEC√çFICOS PARA EL ANUNCIO (ADSENSE) --- */
 .ad-box {
     text-align: center;
     background-color: #f9f9f9; /* Fondo ligeramente diferente para destacar */
@@ -184,7 +184,7 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 250px; /* TamaÒo de un anuncio banner est·ndar */
+    height: 250px; /* Tama√±o de un anuncio banner est√°ndar */
     background-color: #eee;
     border: 2px dashed #ccc;
     color: #666;
@@ -192,7 +192,7 @@ aside {
     font-weight: bold;
 }
 
-/* --- PIE DE P¡GINA (FOOTER) --- */
+/* --- PIE DE P√ÅGINA (FOOTER) --- */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -210,15 +210,15 @@ footer {
     opacity: 0.6;
     margin-top: 15px !important;
 }
-/* Estilo para las im·genes de los artÌculos */
+/* Estilo para las im√°genes de los art√≠culos */
 .article-image {
-    width: 100%; /* Ocupa todo el ancho del artÌculo */
-    height: auto; /* Mantiene la proporciÛn */
+    width: 100%; /* Ocupa todo el ancho del art√≠culo */
+    height: auto; /* Mantiene la proporci√≥n */
     border-radius: 8px; /* Bordes redondeados como el resto de la web */
-    margin-bottom: 20px; /* SeparaciÛn con el texto de abajo */
+    margin-bottom: 20px; /* Separaci√≥n con el texto de abajo */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
 }
-/* Efecto para el botÛn del men˙ cuando pasas el ratÛn */
+/* Efecto para el bot√≥n del men√∫ cuando pasas el rat√≥n */
 nav ul li a:hover {
     background-color: var(--accent-color);
     color: white !important;
@@ -235,23 +235,23 @@ section div {
         transform: translateY(-5px);
         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-/* --- AJUSTES PARA M”VIL --- */
+/* --- AJUSTES PARA M√ìVIL --- */
 @media (max-width: 768px) {
-    /* Pone la barra lateral DEBAJO del artÌculo */
+    /* Pone la barra lateral DEBAJO del art√≠culo */
     .main-content {
         flex-direction: column;
         padding: 10px;
         gap: 20px;
     }
 
-    /* Hace que ocupen todo el ancho del mÛvil */
+    /* Hace que ocupen todo el ancho del m√≥vil */
     main, aside {
         width: 100% !important;
         flex: none;
         margin: 0;
     }
 
-    /* Men˙ en lista vertical para que no se corte */
+    /* Men√∫ en lista vertical para que no se corte */
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -272,12 +272,12 @@ section div {
                 border-radius: 5px;
             }
 
-    /* Evita que el tÌtulo sea demasiado grande en pantallas pequeÒas */
+    /* Evita que el t√≠tulo sea demasiado grande en pantallas peque√±as */
     header h1 {
         font-size: 1.8rem;
     }
 }
-/* --- BOT”N DE CALCULAR MODERNO Y LLAMATIVO --- */
+/* --- BOT√ìN DE CALCULAR MODERNO Y LLAMATIVO --- */
 .btn-calculadora {
     display: block;
     width: 100%; /* Ocupa todo el ancho disponible */
@@ -286,19 +286,19 @@ section div {
     background: linear-gradient(135deg, #2980b9 0%, #3498db 100%); /* Degradado azul profesional */
     color: white !important;
     border: none;
-    padding: 18px 30px; /* Mucho m·s alto para que sea f·cil de pulsar con el dedo */
+    padding: 18px 30px; /* Mucho m√°s alto para que sea f√°cil de pulsar con el dedo */
     font-size: 20px; /* Texto grande */
     font-weight: bold;
-    text-transform: uppercase; /* Letras may˙sculas para dar fuerza */
+    text-transform: uppercase; /* Letras may√∫sculas para dar fuerza */
     letter-spacing: 1px;
-    border-radius: 50px; /* Forma de pÌldora moderna */
+    border-radius: 50px; /* Forma de p√≠ldora moderna */
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(41, 128, 185, 0.3); /* Sombra elegante */
-    transition: all 0.3s ease; /* AnimaciÛn suave */
+    transition: all 0.3s ease; /* Animaci√≥n suave */
 }
 
     .btn-calculadora:hover {
-        transform: translateY(-3px); /* Se eleva un poquito al pasar el ratÛn */
+        transform: translateY(-3px); /* Se eleva un poquito al pasar el rat√≥n */
         box-shadow: 0 15px 25px rgba(41, 128, 185, 0.4);
         background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); /* Cambia el degradado */
     }
@@ -307,7 +307,7 @@ section div {
         transform: translateY(-1px); /* Efecto de pulsado */
     }
 
-/* Ajuste para que el input de n˙mero tambiÈn se vea mejor */
+/* Ajuste para que el input de n√∫mero tambi√©n se vea mejor */
 .calculadora-destacada input[type="number"] {
     padding: 15px;
     border: 2px solid #ddd;
@@ -323,7 +323,7 @@ section div {
     border-color: #2980b9;
     outline: none;
 }
-/* --- ESTILOS PARA EL MENSAJE DE FELICITACI”N --- */
+/* --- ESTILOS PARA EL MENSAJE DE FELICITACI√ìN --- */
 .resultado-oculto {
     opacity: 0;
     transform: translateY(20px);
@@ -336,7 +336,7 @@ section div {
 .resultado-visible {
     opacity: 1;
     transform: translateY(0);
-    background-color: #e8f8f5; /* Un verde muy clarito de Èxito */
+    background-color: #e8f8f5; /* Un verde muy clarito de √©xito */
     border: 1px solid #c3e6cb;
 }
 
@@ -351,7 +351,7 @@ section div {
 }
 
 .mensaje-felicitacion h3 {
-    color: #1abc9c; /* Verde Èxito */
+    color: #1abc9c; /* Verde √©xito */
     margin-top: 0;
 }
 
@@ -415,12 +415,12 @@ section div {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
-/* Ajuste para que todos los botones tengan el mismo tamaÒo visual */
+/* Ajuste para que todos los botones tengan el mismo tama√±o visual */
 .btn-share {
     min-width: 100px;
     text-align: center;
 }
-/* --- ESTILOS PARA LA P¡GINA DE RECURSOS --- */
+/* --- ESTILOS PARA LA P√ÅGINA DE RECURSOS --- */
 .recursos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -474,14 +474,14 @@ section div {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    border-left: 5px solid #3498db; /* Una lÌnea azul lateral para que resalte */
+    border-left: 5px solid #3498db; /* Una l√≠nea azul lateral para que resalte */
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: transform 0.2s;
 }
 
     .termino-card:hover {
-        transform: translateX(10px); /* Un pequeÒo efecto al pasar el ratÛn */
+        transform: translateX(10px); /* Un peque√±o efecto al pasar el rat√≥n */
     }
 
     .termino-card h3 {
@@ -495,3 +495,12 @@ section div {
         color: #555;
         line-height: 1.6;
     }
+.btn-descarga {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #4a6fa5;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
