@@ -1,4 +1,3 @@
-﻿
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,6 +7,14 @@
     <title>AhorroFinanzas | Tu Guía de Finanzas Personales</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Estilos específicos para mejorar la profesionalidad del Inicio */
+        .hero-section { background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('image_a04e22.jpg'); background-size: cover; color: white; padding: 80px 0; text-align: center; }
+        .hero-section h2 { font-size: 2.8rem; margin-bottom: 20px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 50px 0; }
+        .feature-item { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); transition: transform 0.3s; border-top: 5px solid #3498db; }
+        .feature-item:hover { transform: translateY(-10px); }
+        .cta-button { background-color: #2ecc71; color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-block; margin-top: 20px; }
+        .cta-button:hover { background-color: #27ae60; }
         .site-footer { background-color: #2c3e50; color: white; text-align: center; padding: 30px 0; margin-top: 50px; width: 100%; clear: both; }
         .site-footer a { color: white; text-decoration: none; margin: 0 10px; }
     </style>
@@ -21,10 +28,10 @@
         </div>
     </header>
 
-     <nav>
+    <nav>
         <div class="container">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" class="active">Inicio</a></li>
                 <li><a href="ahorro.html">Ahorro</a></li>
                 <li><a href="inversion.html">Inversión</a></li>
                 <li><a href="calculadoras.html">Calculadoras</a></li>
@@ -36,57 +43,68 @@
         </div>
     </nav>
 
+    <section class="hero-section">
+        <div class="container">
+            <h2>Toma el control de tu futuro financiero</h2>
+            <p>Ahorrar no se trata de cuánto ganas, sino de cómo gestionas lo que tienes. Descubre herramientas diseñadas para hacer que tu dinero trabaje para ti.</p>
+            <a href="calculadoras.html" class="cta-button">Probar Calculadoras Gratuitas</a>
+        </div>
+    </section>
+
     <div class="container main-content">
         <main>
-            <article>
-                <h2>Cómo ahorrar tus primeros 1,000€ este año: Guía práctica paso a paso</h2>
-                <img src="ahorrar-dinero-primeros-pasos.jpg" alt="Persona ahorrando" class="article-image" style="width:100%; border-radius:10px;">
+            <section>
+                <h3 style="text-align: center; margin-bottom: 30px;">¿Cómo podemos ayudarte a crecer?</h3>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto;">Nuestra misión es convertir la gestión del dinero en algo accesible, visual y accionable para personas que no tienen formación económica pero sí grandes sueños.</p>
 
-                <p>Ahorrar no se trata de cuánto ganas, sino de cómo gestionas lo que tienes. Con una estrategia clara, es un objetivo alcanzable.</p>
-
-                <h3>1. Aplica la Regla del 50/30/20</h3>
-                <p>Divide tus ingresos: 50% Necesidades, 30% Deseos y 20% Ahorro.</p>
-
-                <h3>2. Detecta y elimina los "Gastos Hormiga"</h3>
-                <p>Pequeños gastos diarios pueden sumar más de 100€ al mes.</p>
-
-                <section style="margin-top: 40px; padding: 20px; background-color: #f9f9f9; border-radius: 10px; border: 1px solid #eee;">
-                    <h3 style="color: #2c3e50; border-bottom: 2px solid #2ecc71; padding-bottom: 10px;">📚 Artículos Destacados</h3>
-                    
-                    <div style="margin-top: 20px;">
-                        <h4 style="margin-bottom: 5px;"><a href="interes-compuesto.html" style="color: #3498db; text-decoration: none;">Interés Compuesto: La Octava Maravilla del Mundo</a></h4>
-                        <p style="font-size: 0.9em; color: #666;">Descubre cómo pequeñas cantidades de dinero pueden convertirse en una fortuna con el paso del tiempo.</p>
-                        <a href="interes-compuesto.html" style="color: #2ecc71; font-weight: bold; text-decoration: none; font-size: 0.8em;">Leer más →</a>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4>Ahorro Automático</h4>
+                        <p>Aprende a aplicar la <strong>Regla del 50/30/20</strong> para dividir tus ingresos entre necesidades, deseos y ahorro de forma sistemática.</p>
                     </div>
-
-                    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-
-                    <div style="margin-top: 20px;">
-                        <h4 style="margin-bottom: 5px;"><a href="guia-presupuesto.html" style="color: #3498db; text-decoration: none;">Guía Definitiva: Cómo hacer un presupuesto</a></h4>
-                        <p style="font-size: 0.9em; color: #666;">Aprende a gestionar tus ingresos y gastos en 4 sencillos pasos para que siempre te sobre dinero.</p>
-                        <a href="guia-presupuesto.html" style="color: #2ecc71; font-weight: bold; text-decoration: none; font-size: 0.8em;">Leer más →</a>
+                    <div class="feature-item">
+                        <h4>Inversión Inteligente</h4>
+                        <p>Descubre el poder del <strong>Interés Compuesto</strong>, la herramienta más poderosa para crear riqueza a largo plazo reinvirtiendo tus ganancias.</p>
                     </div>
-                </section>
+                    <div class="feature-item">
+                        <h4>Gestión de Gastos</h4>
+                        <p>Identifica y elimina los "gastos hormiga" que pueden estar consumiendo más de 100€ de tus ingresos mensuales sin que te des cuenta.</p>
+                    </div>
+                </div>
+
+                <article style="background-color: #f9f9f9; padding: 40px; border-radius: 15px; border-left: 6px solid #2ecc71;">
+                    <h3>Filosofía de Gestión: "Págate a ti primero"</h3>
+                    <p>El ahorro no es lo que sobra al final del mes; es el compromiso que haces contigo mismo al principio. A través de la simplicidad y la educación continua, te enseñamos a priorizar tu bienestar financiero.</p>
+                    <p>En esta web encontrarás <strong>herramientas interactivas</strong> y artículos prácticos para entender exactamente a dónde se va tu dinero cada mes.</p>
                 </article>
+            </section>
         </main>
 
         <aside>
             <div class="sidebar-box tools-box">
-                <h3>Herramienta Destacada</h3>
-                <p>Calcula cuánto puedes ahorrar al año.</p>
-                <button onclick="window.location.href='calculadoras.html'" class="btn-tool">Ir a la Calculadora</button>
+                <h3>Recursos Imprescindibles</h3>
+                <p>Analiza tus gastos y establece un presupuesto claro utilizando nuestra plantilla profesional.</p>
+                <ul>
+                    <li><a href="recursos.html">Descargar Plantilla Excel</a></li>
+                    <li><a href="diccionario.html">Glosario Financiero</a></li>
+                </ul>
+                <hr>
+                <p>Recuerda: la mejor inversión es la que haces en tu propio conocimiento.</p>
             </div>
         </aside>
     </div>
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Ahorro Finanzas Pro.</p>
-            <p style="font-size: 0.8rem;">
-                <a href="index.html" style="color: white; margin: 0 5px;">Inicio</a> | 
-                <a href="contacto.html" style="color: white; margin: 0 5px;">Contacto</a> | 
-                <a href="aviso-legal.html" style="color: white; margin: 0 5px;">Aviso Legal</a> | 
-                <a href="privacidad.html" style="color: white; margin: 0 5px;">Privacidad</a>
+            <p>&copy; 2026 Ahorro Finanzas Pro. Todos los derechos reservados.</p>
+            <p>
+                <a href="index.html">Inicio</a> | 
+                <a href="contacto.html">Contacto</a> | 
+                <a href="aviso-legal.html">Aviso Legal</a> | 
+                <a href="privacidad.html">Privacidad</a>
+            </p>
+            <p style="font-size: 0.8rem; margin-top: 15px; opacity: 0.7;">
+                Información con fines puramente educativos e informativos.
             </p>
         </div>
     </footer>
