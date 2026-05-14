@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diccionario Financiero | Ahorro Inteligente</title>
+    <title>Diccionario Financiero A-Z | AhorroFinanzas</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .diccionario-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .termino-card { background: #fff; padding: 25px; border-radius: 12px; border-left: 5px solid #3498db; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; }
+        .termino-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .categoria-header { grid-column: 1 / -1; background: #2c3e50; color: white; padding: 10px 20px; border-radius: 8px; margin-top: 30px; }
+        .indice-rapido { background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .indice-rapido a { margin-right: 15px; text-decoration: none; font-weight: bold; color: #3498db; }
+        .indice-rapido a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
 
     <header>
         <div class="container">
             <h1>Ahorro<span class="highlight">Finanzas</span></h1>
-            <p>Conceptos clave explicados de forma sencilla.</p>
+            <p>Tu enciclopedia personal de finanzas e inversión.</p>
         </div>
     </header>
 
-     <nav>
+    <nav>
         <div class="container">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -26,7 +35,6 @@
                 <li><a href="retos.html">Retos</a></li>
                 <li><a href="diccionario.html">Diccionario</a></li>
                 <li><a href="recursos.html">Recursos</a></li>
-            
             </ul>
         </div>
     </nav>
@@ -35,47 +43,115 @@
         <main>
             <article>
                 <h2>Glosario de Finanzas Personales</h2>
-                <p>No necesitas ser un experto para entender estos términos. Aquí tienes lo esencial:</p>
+                <p>Dominar el lenguaje del dinero es el primer paso para controlar tus finanzas. Aquí tienes los términos más importantes explicados para que cualquiera pueda entenderlos.</p>
+
+                <div class="indice-rapido">
+                    <strong>Ir a sección:</strong>
+                    <a href="#ahorro">Ahorro</a>
+                    <a href="#inversion">Inversión</a>
+                    <a href="#impuestos">Impuestos</a>
+                    <a href="#psicologia">Psicología</a>
+                </div>
 
                 <div class="diccionario-container">
-                    <div class="termino-card">
-                        <h3>📈 Interés Compuesto</h3>
-                        <p>Es el proceso donde los intereses generados por tu dinero se reinvierten para generar más intereses. Es la herramienta más poderosa para crear riqueza a largo plazo.</p>
-                    </div>
+                    
+                    <div class="categoria-header" id="ahorro"><h3>💰 Conceptos de Ahorro y Gestión</h3></div>
 
                     <div class="termino-card">
                         <h3>🛡️ Fondo de Emergencia</h3>
-                        <p>Una cantidad de dinero ahorrada (idealmente entre 3 y 6 meses de gastos) que se usa exclusivamente para imprevistos urgentes, como una avería del coche o pérdida de empleo.</p>
+                        <p>Es un colchón de dinero (normalmente 3 a 6 meses de tus gastos básicos) destinado exclusivamente a cubrir imprevistos urgentes para no tener que endeudarte.</p>
                     </div>
+
+                    <div class="termino-card">
+                        <h3>🐜 Gastos Hormiga</h3>
+                        <p>Pequeños consumos diarios que parecen insignificantes (un café, chicles, suscripciones sin usar) pero que al sumarlos a fin de mes suponen una gran pérdida de dinero.</p>
+                    </div>
+
+                    <div class="termino-card">
+                        <h3>📊 Presupuesto 50/30/20</h3>
+                        <p>Una regla sencilla: el 50% de tus ingresos para necesidades, el 30% para deseos o caprichos, y el 20% destinado obligatoriamente al ahorro o pago de deuda.</p>
+                    </div>
+
+                    <div class="termino-card">
+                        <h3>🏦 Tasa de Ahorro</h3>
+                        <p>El porcentaje de tus ingresos netos que consigues guardar cada mes. Es el indicador más importante para medir tu salud financiera.</p>
+                    </div>
+
+                    <div class="categoria-header" id="inversion"><h3>📈 Inversión y Patrimonio</h3></div>
+
+                    <div class="termino-card">
+                        <h3>📈 Interés Compuesto</h3>
+                        <p>Ocurre cuando los intereses ganados se suman al capital inicial para generar nuevos intereses. Es el efecto "bola de nieve" de la riqueza.</p>
+                    </div>
+
+                    <div class="termino-card">
+                        <h3>🌍 Diversificación</h3>
+                        <p>La estrategia de repartir tu dinero en diferentes tipos de activos (bolsa, oro, inmuebles) para reducir el riesgo. "No pongas todos los huevos en la misma cesta".</p>
+                    </div>
+
+                    <div class="termino-card">
+                        <h3>📉 Fondo Indexado</h3>
+                        <p>Un tipo de inversión que replica un índice entero (como las 500 empresas más grandes de EE.UU.). Es barato, sencillo y muy eficaz a largo plazo.</p>
+                    </div>
+
+                    <div class="termino-card">
+                        <h3>🏠 Activo vs Pasivo</h3>
+                        <p><strong>Activo:</strong> Algo que pone dinero en tu bolsillo. <br><strong>Pasivo:</strong> Algo que saca dinero de tu bolsillo (préstamos, deudas de consumo).</p>
+                    </div>
+
+                    <div class="termino-card">
+                        <h3>🐂 Mercado Alcista (Bull Market)</h3>
+                        <p>Periodo de tiempo en el que los precios de las acciones suben de forma prolongada debido al optimismo de los inversores.</p>
+                    </div>
+
+                    <div class="categoria-header" id="impuestos"><h3>💸 Impuestos y Economía</h3></div>
 
                     <div class="termino-card">
                         <h3>💸 Inflación</h3>
-                        <p>El aumento general de los precios de bienes y servicios. Si la inflación sube, tu dinero tiene menos "poder adquisitivo" (puedes comprar menos cosas con el mismo billete).</p>
+                        <p>El aumento de los precios que hace que tu dinero valga menos. Si la inflación es del 3%, tus 100€ de hoy podrán comprar solo 97€ en un año.</p>
                     </div>
 
                     <div class="termino-card">
-                        <h3>🏦 Activo vs Pasivo</h3>
-                        <p>
-                            <strong>Activo:</strong> Algo que pone dinero en tu bolsillo (inversiones, una casa alquilada). <br>
-                            <strong>Pasivo:</strong> Algo que saca dinero de tu bolsillo (un préstamo, suscripciones que no usas).
-                        </p>
+                        <h3>📑 IRPF</h3>
+                        <p>Impuesto sobre la Renta de las Personas Físicas. Es el dinero que el Estado retiene de tu sueldo para financiar servicios públicos.</p>
                     </div>
+
+                    <div class="termino-card">
+                        <h3>📉 Deflación</h3>
+                        <p>Lo contrario a la inflación: los precios bajan. Aunque parezca bueno, suele ser señal de una crisis económica grave donde nadie consume.</p>
+                    </div>
+
+                    <div class="categoria-header" id="psicologia"><h3>🧠 Psicología del Dinero</h3></div>
 
                     <div class="termino-card">
                         <h3>🕊️ Libertad Financiera</h3>
-                        <p>Es el punto en el que tus ingresos pasivos (inversiones) cubren todos tus gastos de vida, permitiéndote elegir si quieres trabajar o no.</p>
+                        <p>El momento en el que tus ingresos pasivos cubren todos tus gastos. El trabajo pasa a ser una opción, no una obligación.</p>
                     </div>
+
+                    <div class="termino-card">
+                        <h3>🍭 Gratificación Aplazada</h3>
+                        <p>La habilidad de resistir un placer inmediato (comprar algo hoy) para obtener una recompensa mucho mayor en el futuro (tener ahorros).</p>
+                    </div>
+
+                    <div class="termino-card">
+                        <h3>🛒 Inflación del Estilo de Vida</h3>
+                        <p>La tendencia a gastar más dinero a medida que ganas más, impidiéndote ahorrar a pesar de tener un sueldo mejor.</p>
+                    </div>
+
                 </div>
             </article>
         </main>
 
         <aside>
-            <div class="sidebar-box">
-                <h3>¿Te gusta aprender?</h3>
-                <p>Sigue explorando nuestras <strong>Calculadoras</strong> para aplicar estos conceptos hoy mismo.</p>
+            <div class="sidebar-box" style="position: sticky; top: 20px;">
+                <h3>💡 Tip Financiero</h3>
+                <p>No intentes memorizar todo hoy. Elige <strong>un término cada semana</strong> y busca cómo aplicarlo a tu cuenta bancaria.</p>
+                <hr>
+                <p>¿Falta algún término? <a href="contacto.html">Cuéntanoslo</a>.</p>
             </div>
         </aside>
     </div>
+
     <footer>
         <div class="container">
             <p>&copy; 2026 Ahorro Finanzas Pro.</p>
