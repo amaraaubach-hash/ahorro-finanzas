@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .about-header { display: flex; align-items: center; gap: 30px; margin-bottom: 40px; flex-wrap: wrap; }
-        .about-image-main { width: 300px; height: 300px; border-radius: 15px; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border: 4px solid white; }
+        .about-image-main { width: 300px; height: 300px; border-radius: 15px; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border: 4px solid white; background: #f0f0f0; }
         .timeline { position: relative; max-width: 800px; margin: 40px 0; padding-left: 30px; border-left: 3px solid #3498db; }
         .timeline-item { margin-bottom: 30px; position: relative; }
         .timeline-item::before { content: ''; position: absolute; left: -39px; top: 5px; width: 15px; height: 15px; border-radius: 50%; background: #3498db; border: 3px solid white; }
@@ -16,7 +16,7 @@
         .philosophy-card { background: #f8f9fa; padding: 20px; border-radius: 10px; border-bottom: 4px solid #3498db; transition: transform 0.3s; }
         .philosophy-card:hover { transform: translateY(-5px); }
         .gallery-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 40px 0; }
-        .gallery-item { border-radius: 10px; overflow: hidden; position: relative; }
+        .gallery-item { border-radius: 10px; overflow: hidden; position: relative; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         .gallery-item img { width: 100%; height: 200px; object-fit: cover; }
         .gallery-caption { padding: 10px; background: #fff; text-align: center; font-size: 0.9rem; font-weight: bold; }
     </style>
@@ -44,16 +44,15 @@
         </div>
     </nav>
 
-
     <div class="container main-content">
         <main style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
             
             <section class="about-header">
-                <img src="tu-foto-perfil.jpg" alt="Creador de AhorroFinanzas" class="about-image-main">
+                <img src="reto-ahorro-52-semanas.png" alt="Creador de AhorroFinanzas" class="about-image-main">
                 <div style="flex: 1;">
                     <h2>¿Quién soy y por qué nació AhorroFinanzas?</h2>
-                    <p>¡Hola! Soy la mente inquieta detrás de este proyecto. Mi viaje en el mundo de las finanzas personales no empezó en una prestigiosa universidad, sino en el salón de mi casa, enfrentándome a la duda de <em>"¿a dónde se ha ido mi dinero este mes?"</em>.</p>
-                    <p>AhorroFinanzas nació con una misión clara: convertir la gestión del dinero en algo accesible, visual y, sobre todo, accionable para personas que no tienen formación económica pero sí tienen grandes sueños.</p>
+                    <p>¡Hola! Soy la mente inquieta detrás de este proyecto. Mi viaje en el mundo de las finanzas personales no empezó en una prestigiosa universidad, sino enfrentándome a la duda de <em>"¿a dónde se ha ido mi dinero este mes?"</em>.</p>
+                    <p>AhorroFinanzas nació para convertir la gestión del dinero en algo accesible y visual para personas con grandes sueños pero sin formación económica.</p>
                 </div>
             </section>
 
@@ -63,15 +62,11 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <strong>2020: El Despertar</strong>
-                    <p>Empecé a registrar cada céntimo. Descubrí que los "gastos hormiga" se llevaban el 20% de mis ingresos. Fue el momento en que diseñé mi primera plantilla de Excel.</p>
-                </div>
-                <div class="timeline-item">
-                    <strong>2022: La Inversión Inteligente</strong>
-                    <p>Tras leer más de 30 libros sobre economía, realicé mi primera inversión en fondos indexados. Aprendí que la paciencia es la herramienta más poderosa del inversor.</p>
+                    <p>Empecé a registrar cada céntimo y descubrí que los "gastos hormiga" se llevaban el 20% de mis ingresos.</p>
                 </div>
                 <div class="timeline-item">
                     <strong>2026: AhorroFinanzas Pro</strong>
-                    <p>Lanzamiento de esta plataforma. Mi objetivo ahora es devolver a la comunidad todo lo aprendido mediante herramientas gratuitas y contenido honesto.</p>
+                    <p>Lanzamiento de esta plataforma para devolver a la comunidad todo lo aprendido mediante herramientas gratuitas.</p>
                 </div>
             </div>
 
@@ -79,63 +74,37 @@
             <div class="philosophy-grid">
                 <div class="philosophy-card">
                     <h4>Págate a ti primero</h4>
-                    <p>El ahorro no es lo que sobra al final del mes, es el compromiso que haces contigo mismo al principio.</p>
+                    <p>El ahorro es el compromiso que haces contigo mismo al principio de cada mes.</p>
                 </div>
                 <div class="philosophy-card">
                     <h4>Interés Compuesto</h4>
-                    <p>No busco hacerme rico mañana. Busco que mi dinero trabaje en silencio mientras yo duermo.</p>
-                </div>
-                <div class="philosophy-card">
-                    <h4>Simplicidad Vital</h4>
-                    <p>Si un sistema de ahorro es complicado, lo acabarás abandonando. Menos es más.</p>
+                    <p>Busco que mi dinero trabaje en silencio mientras yo me enfoco en vivir.</p>
                 </div>
             </div>
 
-            <h3>Lo que me motiva a seguir</h3>
-            <p>Para mí, el dinero no es el fin, es el medio para disfrutar de lo que realmente importa. Aquí algunas de las metas que he logrado gracias a un buen sistema de ahorro:</p>
+            <h3>Visualizando el éxito</h3>
+            <p>Estas son algunas de las metas y retos que impulsan este sitio web:</p>
             <div class="gallery-container">
                 <div class="gallery-item">
-                    <img src="foto-viaje.jpg" alt="Viajes realizados">
-                    <div class="gallery-caption">Libertad para viajar</div>
+                    <img src="reto-mes-no-gasto-calendario.png" alt="Planificación">
+                    <div class="gallery-caption">Planificación Constante</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="foto-estudio.jpg" alt="Espacio de trabajo">
-                    <div class="gallery-caption">Educación constante</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="foto-tranquilidad.jpg" alt="Tranquilidad financiera">
-                    <div class="gallery-caption">Cero estrés financiero</div>
+                    <img src="reto-ahorro-centimo-hucha.png" alt="Ahorro progresivo">
+                    <div class="gallery-caption">Ahorro Paso a Paso</div>
                 </div>
             </div>
 
             <section style="background: #eef7ff; padding: 30px; border-radius: 10px; margin-top: 40px; text-align: center;">
-                <h3>¿Quieres que recorramos este camino juntos?</h3>
-                <p>No importa si empiezas con 10€ o con 10.000€. Lo importante es empezar hoy. Te invito a usar mis <a href="calculadoras.html">calculadoras</a> y a unirte a los <a href="retos.html">retos de ahorro</a>.</p>
-                <p><strong>¡Hagamos que tu dinero trabaje para ti!</strong></p>
+                <h3>¿Hablamos?</h3>
+                <p>Si quieres compartir tu progreso o tienes dudas, escríbeme en <a href="contacto.html">Contacto</a>.</p>
             </section>
-
         </main>
     </div>
 
     <footer class="site-footer" style="background-color: #2c3e50; color: white; text-align: center; padding: 30px 0; margin-top: 50px;">
         <div class="container">
             <p>&copy; 2026 Ahorro Finanzas Pro.</p>
-            <p style="font-size: 0.8rem;">
-                <a href="index.html" style="color: white; margin: 0 5px;">Inicio</a> |
-                <a href="contacto.html" style="color: white; margin: 0 5px;">Contacto</a> |
-                <a href="aviso-legal.html" style="color: white; margin: 0 5px;">Aviso Legal</a> |
-                <a href="privacidad.html" style="color: white; margin: 0 5px;">Privacidad</a>
-            </p>
-        </div>
-    <<footer>
-        <div class="container">
-            <p>&copy; 2026 Ahorro Finanzas Pro.</p>
-            <p style="font-size: 0.8rem;">
-                <a href="index.html" style="color: white; margin: 0 5px;">Inicio</a> |
-                <a href="contacto.html" style="color: white; margin: 0 5px;">Contacto</a> |
-                <a href="aviso-legal.html" style="color: white; margin: 0 5px;">Aviso Legal</a> |
-                <a href="privacidad.html" style="color: white; margin: 0 5px;">Privacidad</a>
-            </p>
         </div>
     </footer>
 </body>
